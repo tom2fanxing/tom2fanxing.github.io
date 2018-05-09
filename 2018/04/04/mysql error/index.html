@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="2017-12-27，MYSQL的存储调用时出现了“The user specified as a definer (”test@’%’) does not exist”的问题。 网上查过后，都是提示用户权限不够，如：http://blog.handone.com/index.php/archives/137 但我们生产环境用户都是ROOT，应该不存在用户权限问题。后来无意中发现，存储的定义者是“">
+<meta name="description" content="2017-12-27，MYSQL的存储调用时出现了“The user specified as a definer (”test@’%’) does not exist”的问题。 网上查过后，都是提示用户权限不够，如：http://blog.handone.com/index.php/archives/137">
 <meta name="keywords" content="mysql错误,mysql">
 <meta property="og:type" content="article">
 <meta property="og:title" content="mysql的“The user specified as a definer (”@’%&#39;) does not exist”问题 解决">
 <meta property="og:url" content="http://yoursite.com/2018/04/04/mysql error/index.html">
 <meta property="og:site_name" content="小牛博客">
-<meta property="og:description" content="2017-12-27，MYSQL的存储调用时出现了“The user specified as a definer (”test@’%’) does not exist”的问题。 网上查过后，都是提示用户权限不够，如：http://blog.handone.com/index.php/archives/137 但我们生产环境用户都是ROOT，应该不存在用户权限问题。后来无意中发现，存储的定义者是“">
+<meta property="og:description" content="2017-12-27，MYSQL的存储调用时出现了“The user specified as a definer (”test@’%’) does not exist”的问题。 网上查过后，都是提示用户权限不够，如：http://blog.handone.com/index.php/archives/137">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-08T09:03:20.225Z">
+<meta property="og:updated_time" content="2018-05-09T03:42:16.429Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="mysql的“The user specified as a definer (”@’%&#39;) does not exist”问题 解决">
-<meta name="twitter:description" content="2017-12-27，MYSQL的存储调用时出现了“The user specified as a definer (”test@’%’) does not exist”的问题。 网上查过后，都是提示用户权限不够，如：http://blog.handone.com/index.php/archives/137 但我们生产环境用户都是ROOT，应该不存在用户权限问题。后来无意中发现，存储的定义者是“">
+<meta name="twitter:description" content="2017-12-27，MYSQL的存储调用时出现了“The user specified as a definer (”test@’%’) does not exist”的问题。 网上查过后，都是提示用户权限不够，如：http://blog.handone.com/index.php/archives/137">
 
 
 
@@ -221,6 +221,36 @@
           </a>
         </li>
       
+        
+        <li class="menu-item menu-item-xiaoniu">
+          <a href="/categories/xiaoniu" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-child"></i> <br />
+            
+            小牛
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-develop">
+          <a href="/categories/develop" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-code"></i> <br />
+            
+            技术
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-games">
+          <a href="/categories/games" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-gamepad"></i> <br />
+            
+            游戏
+          </a>
+        </li>
+      
 
       
     </ul>
@@ -295,6 +325,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/develop/" itemprop="url" rel="index">
+                    <span itemprop="name">develop</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -323,8 +375,7 @@
 
       
         <p>2017-12-27，MYSQL的存储调用时出现了“The user specified as a definer (”test@’%’) does not exist”的问题。</p>
-<p>网上查过后，都是提示用户权限不够，如：<a href="http://blog.handone.com/index.php/archives/137" target="_blank" rel="noopener">http://blog.handone.com/index.php/archives/137</a></p>
-<p>但我们生产环境用户都是ROOT，应该不存在用户权限问题。后来无意中发现，存储的定义者是“test@%”，而不是“root@%”。</p>
+<p>网上查过后，都是提示用户权限不够，如：<a href="http://blog.handone.com/index.php/archives/137" target="_blank" rel="noopener">http://blog.handone.com/index.php/archives/137</a><br><a id="more"></a><br>但我们生产环境用户都是ROOT，应该不存在用户权限问题。后来无意中发现，存储的定义者是“test@%”，而不是“root@%”。</p>
 <p>后来与同事确认后，发现他用Navicat传输两张新表时，将存储也传输过来覆盖了，但测试环境我们的存储新建用户是”test”用户，所以手动将这几个存储删除手动重建就没问题了。</p>
 <p>因此，记录一下，提醒自己存储不要用Navicat传输功能为妙。</p>
 
@@ -450,6 +501,15 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
 
             
               
@@ -466,6 +526,22 @@
 
           
 
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/tom2fanxing" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:main_dir@163.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
           
 
           
