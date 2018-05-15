@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="python错误,rarfile,python," />
 
 
 
@@ -79,13 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="小牛博客">
-<meta property="og:url" content="http://yoursite.com/archives/2018/04/index.html">
+<meta name="description" content="最近用python调用rarfile进行解压rar压缩包时，报了如下错误：1rarfile.RarCannotExec: Unrar not installed? (rarfile.UNRAR_TOOL=&apos;unrar&apos;) 结合本人C#调用rar.exe的经验：rar压缩包的算法并不对外公开，所以其它软件想压缩或解压rar文件，必须通过cmd调用rar.exe。所以，怀疑rarfile其实也是调用的">
+<meta name="keywords" content="python错误,rarfile,python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Rarfile解压不了的问题">
+<meta property="og:url" content="http://yoursite.com/2018/05/15/rarfile-error/index.html">
 <meta property="og:site_name" content="小牛博客">
+<meta property="og:description" content="最近用python调用rarfile进行解压rar压缩包时，报了如下错误：1rarfile.RarCannotExec: Unrar not installed? (rarfile.UNRAR_TOOL=&apos;unrar&apos;) 结合本人C#调用rar.exe的经验：rar压缩包的算法并不对外公开，所以其它软件想压缩或解压rar文件，必须通过cmd调用rar.exe。所以，怀疑rarfile其实也是调用的">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-05-15T07:13:43.826Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="小牛博客">
+<meta name="twitter:title" content="Rarfile解压不了的问题">
+<meta name="twitter:description" content="最近用python调用rarfile进行解压rar压缩包时，报了如下错误：1rarfile.RarCannotExec: Unrar not installed? (rarfile.UNRAR_TOOL=&apos;unrar&apos;) 结合本人C#调用rar.exe的经验：rar压缩包的算法并不对外公开，所以其它软件想压缩或解压rar文件，必须通过cmd调用rar.exe。所以，怀疑rarfile其实也是调用的">
 
 
 
@@ -115,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2018/04/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/05/15/rarfile-error/"/>
 
 
 
 
 
-  <title>归档 | 小牛博客</title>
+  <title>Rarfile解压不了的问题 | 小牛博客</title>
   
 
 
@@ -140,7 +145,7 @@
     
   
 
-  <div class="container sidebar-position-right page-archive">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 	<a href="https://github.com/tom2fanxing"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_white_ffffff.png" alt="Fork me on GitHub"></a>
 	
@@ -265,74 +270,191 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
-
-      <span class="archive-page-counter">
-        
-        
-        
-          
-        
-        嗯..! 目前共计 8 篇日志。 继续努力。
-      </span>
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2018">2018</h1>
-          </div>
-        
-        
-
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/15/rarfile-error/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小牛爸爸">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/logo.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小牛博客">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/04/04/mysql error/" itemprop="url">
-              
-                <span itemprop="name">mysql的“The user specified as a definer (”@’%') does not exist”问题 解决</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">Rarfile解压不了的问题</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-04-04T18:53:45+08:00"
-              content="2018-04-04" >
-          04-04
-        </time>
-      </div>
+        <div class="post-meta">
+		  
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-15T15:12:38+08:00">
+                2018-05-15
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/develop/" itemprop="url" rel="index">
+                    <span itemprop="name">develop</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/05/15/rarfile-error/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/05/15/rarfile-error/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
+      
 
+      
+        <p>最近用python调用rarfile进行解压rar压缩包时，报了如下错误：<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rarfile.RarCannotExec: Unrar not installed? (rarfile.UNRAR_TOOL='unrar')</span><br></pre></td></tr></table></figure></p>
+<p>结合本人C#调用rar.exe的经验：rar压缩包的算法并不对外公开，所以其它软件想压缩或解压rar文件，必须通过cmd调用rar.exe。<br>所以，怀疑rarfile其实也是调用的rar.exe或unrar.exe</p>
+<p>百度后发现如下两篇文章，侧面证实了上述猜测。</p>
+<p><strong>参考</strong>：<br>    <a href="https://blog.csdn.net/big_talent/article/details/52367184" target="_blank" rel="noopener">https://blog.csdn.net/big_talent/article/details/52367184</a><br>    <a href="https://blog.csdn.net/luoye7422/article/details/41873499" target="_blank" rel="noopener">https://blog.csdn.net/luoye7422/article/details/41873499</a></p>
+<p><strong>解决方案</strong>：</p>
+<blockquote>
+<p>据winrar的目录中的unrar.exe，拷贝到我的python脚本目录下，再执行就ok了；<br>或者环境变量path中加入unrar.exe所在目录；<br>PyCharm的话，可以将unrar.exe复制到项目的venv/Scripts下。</p>
+</blockquote>
+
+      
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/python错误/" rel="tag"># python错误</a>
+          
+            <a href="/tags/rarfile/" rel="tag"># rarfile</a>
+          
+            <a href="/tags/python/" rel="tag"># python</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/05/15/xiaoniu20180515/" rel="next" title="小牛-20180515">
+                <i class="fa fa-chevron-left"></i> 小牛-20180515
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -340,6 +462,17 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
 
         </div>
         
@@ -584,6 +717,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -630,6 +767,30 @@
 
     
 
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: 'tom2fanxing',
+            repo: 'tom2fanxing.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '4ce6e14c724b5626361cf0470ae8546869af19b4',
+            
+                client_id: 'd3b55413bf25f2bec17f'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
     
 
 
